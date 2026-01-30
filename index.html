@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PlantaVetra | Rasterização para DWG Profissional</title>
+
+<meta name="description" content="Rasterização de plantas para AutoCAD. Converta imagem, PDF ou papel em DWG profissional com entrega rápida.">
+<meta name="keywords" content="rasterização dwg, planta para autocad, vetorizar planta, imagem para dwg">
+<meta name="author" content="PlantaVetra">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+<rect width='100' height='100' rx='14' fill='%23020617'/>
+<rect x='20' y='20' width='60' height='60' fill='none' stroke='%2338bdf8' stroke-width='6'/>
+<line x1='20' y1='50' x2='80' y2='50' stroke='%2338bdf8' stroke-width='4'/>
+<line x1='50' y1='20' x2='50' y2='80' stroke='%2338bdf8' stroke-width='4'/>
+</svg>">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  color: #ffffff;
+  background-color: #020617;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+/* LOGO */
+.logo {
+  width: 240px;
+}
+
+/* HERO */
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 40px 70px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin: 22px 0;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 720px;
+}
+
+/* CTA LISTRADO */
+.cta {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 16px 28px;
+  font-weight: 900;
+  text-decoration: none;
+  color: #020617;
+  border-radius: 6px;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      #38bdf8,
+      #38bdf8 10px,
+      #7dd3fc 10px,
+      #7dd3fc 20px
+    );
+  transition: transform 0.3s ease;
+}
+
+.cta:hover {
+  transform: translateY(-2px);
+}
+
+/* SERVICES */
+.services {
+  background: #ffffff;
+  color: #020617;
+  padding: 70px 40px;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.services p {
+  max-width: 820px;
+  margin: auto;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* PORTFOLIO BUTTON */
+.portfolio-link {
+  text-align: center;
+  margin-top: 35px;
+}
+
+.portfolio-link a {
+  background: #020617;
+  color: #ffffff;
+  padding: 14px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.portfolio-link a:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #020617;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25D366;
+  color: #ffffff;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 26px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  z-index: 1000;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  header {
+    justify-content: center;
+  }
+
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .services {
+    padding: 45px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <!-- LOGO SVG -->
+  <svg class="logo" viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg">
+    <rect width="260" height="70" rx="8" fill="#020617"/>
+    <rect x="10" y="15" width="40" height="40" stroke="#38bdf8" stroke-width="2" fill="none"/>
+    <line x1="10" y1="35" x2="50" y2="35" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="30" y1="15" x2="30" y2="55" stroke="#38bdf8" stroke-width="2"/>
+    <text x="65" y="45" font-size="28" fill="#ffffff">PLANTAVETRA</text>
+  </svg>
+</header>
+
+<section class="hero">
+  <h1>Rasterização <span>rápida</span> para DWG</h1>
+
+  <p>
+    Convertemos plantas em papel, imagem ou PDF em
+    <strong>DWG profissional padrão AutoCAD</strong>,
+    com precisão técnica e entrega rápida.
+  </p>
+
+  <a class="cta" href="https://wa.me/5517992603717" target="_blank">
+    Peça já o seu orçamento — entrega rápida
+  </a>
+</section>
+
+<section class="services">
+  <h2>Nossos serviços</h2>
+  <p>
+    Rasterização e vetorização técnica de plantas,
+    ajuste de escala, layers padrão CAD
+    e arquivos prontos para uso profissional.
+  </p>
+
+  <div class="portfolio-link">
+    <a href="portfolio.html">Ver Portifólio</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 PlantaVetra — Todos os direitos reservados.
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5517992603717" target="_blank">
+  💬
+</a>
+
+</body>
+</html>
