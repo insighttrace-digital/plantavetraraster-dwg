@@ -254,9 +254,7 @@ footer {
 <!-- BOTÃO FLUTUANTE EMAIL -->
 <a class="email-float"
    href="mailto:eli7martins@gmail.com
-   ?subject=Orçamento%20Rasterização%20DWG
-   &body=Olá,%0D%0A%0D%0AGostaria%20de%20um%20orçamento%20para%20rasterização%20de%20planta.%0D%0A%0D%0AObrigado!"
-   aria-label="Solicitar orçamento por e-mail">
+  <script> function enviarEmail() { const agora = new Date(); const horaBrasilia = new Date( agora.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }) ).getHours(); let saudacao = "Boa noite"; if (horaBrasilia >= 5 && horaBrasilia < 12) saudacao = "Bom dia"; else if (horaBrasilia >= 12 && horaBrasilia < 18) saudacao = "Boa tarde"; const mensagem = saudacao + ",\n\n" + "Solicito uma cotação para conversão de imagem ou planta para arquivo DWG em padrão técnico CAD.\n\n" + "Favor informar valores e prazo.\n\n" + "Formato do arquivo:\n" + "Escala:\n" + "Prazo desejado:\n\n" + "Obrigado!"; window.location.href = "mailto:eli7martins@gmail.com" + "?subject=Cotação Conversão para DWG" + "&body=" + encodeURIComponent(mensagem); } </script>
 
   <svg viewBox="0 0 24 24">
     <path d="M2 6v12h20V6H2zm10 7L4 8h16l-8 5z"/>
@@ -265,3 +263,4 @@ footer {
 
 </body>
 </html>
+
