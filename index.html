@@ -19,13 +19,23 @@
 </svg>">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+/* FONTE SANS SERIF MODERNA */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Inter",
+    sans-serif;
 }
 
 body {
@@ -73,7 +83,7 @@ header {
   max-width: 720px;
 }
 
-/* CTA EMAIL */
+/* CTA */
 .cta {
   display: inline-block;
   margin-top: 30px;
@@ -110,6 +120,7 @@ header {
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 18px;
+  font-weight: 900;
 }
 
 .services p {
@@ -120,7 +131,7 @@ header {
   line-height: 1.6;
 }
 
-/* PORTFOLIO BUTTON */
+/* PORTFOLIO */
 .portfolio-link {
   text-align: center;
   margin-top: 35px;
@@ -150,7 +161,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* EMAIL FLOAT BUTTON */
+/* BOTÃO EMAIL FLUTUANTE */
 .email-float {
   position: fixed;
   right: 18px;
@@ -227,9 +238,8 @@ footer {
 
   <a class="cta"
      href="mailto:eli7martins@gmail.com
-     ?subject=Orçamento%20Rasterização%20DWG
-     &body=Olá,%0D%0A%0D%0AGostaria%20de%20solicitar%20um%20orçamento%20para%20rasterização%20de%20planta.%0D%0A%0D%0AFormato%20do%20arquivo:%0D%0AEscala:%0D%0APrazo%20desejado:%0D%0A%0D%0AObrigado!"
-  >
+     ?subject=Or%C3%A7amento%20Rasteriza%C3%A7%C3%A3o%20DWG
+     &body=Ol%C3%A1,%0D%0A%0D%0AGostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20rasteriza%C3%A7%C3%A3o%20de%20planta.%0D%0A%0D%0AFormato%20do%20arquivo:%0D%0AEscala:%0D%0APrazo%20desejado:%0D%0A%0D%0AObrigado!">
     Peça já o seu orçamento — entrega rápida
   </a>
 </section>
@@ -251,11 +261,11 @@ footer {
   © 2026 PlantaVetra — Todos os direitos reservados.
 </footer>
 
-<!-- BOTÃO FLUTUANTE EMAIL -->
 <a class="email-float"
    href="mailto:eli7martins@gmail.com
-  <script> function enviarEmail() { const agora = new Date(); const horaBrasilia = new Date( agora.toLocaleString("en-US", { timeZone: "America/Sao_Paulo" }) ).getHours(); let saudacao = "Boa noite"; if (horaBrasilia >= 5 && horaBrasilia < 12) saudacao = "Bom dia"; else if (horaBrasilia >= 12 && horaBrasilia < 18) saudacao = "Boa tarde"; const mensagem = saudacao + ",\n\n" + "Solicito uma cotação para conversão de imagem ou planta para arquivo DWG em padrão técnico CAD.\n\n" + "Favor informar valores e prazo.\n\n" + "Formato do arquivo:\n" + "Escala:\n" + "Prazo desejado:\n\n" + "Obrigado!"; window.location.href = "mailto:eli7martins@gmail.com" + "?subject=Cotação Conversão para DWG" + "&body=" + encodeURIComponent(mensagem); } </script>
-
+   ?subject=Or%C3%A7amento%20Rasteriza%C3%A7%C3%A3o%20DWG
+   &body=Ol%C3%A1,%0D%0A%0D%0AGostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20rasteriza%C3%A7%C3%A3o%20de%20planta.%0D%0A%0D%0AObrigado!"
+   aria-label="Solicitar orçamento por e-mail">
   <svg viewBox="0 0 24 24">
     <path d="M2 6v12h20V6H2zm10 7L4 8h16l-8 5z"/>
   </svg>
@@ -263,4 +273,3 @@ footer {
 
 </body>
 </html>
-
