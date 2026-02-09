@@ -10,6 +10,9 @@
 <meta name="keywords" content="rasterização dwg, planta para autocad, vetorizar planta, imagem para dwg">
 <meta name="author" content="PlantaVetra">
 
+<!-- FONTES SANS SERIF MODERNAS -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <!-- FAVICON -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
@@ -20,16 +23,14 @@
 </svg>">
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
 }
 
 body {
+  font-family: 'Inter', sans-serif;
   color: #ffffff;
   background-color: #020617;
   background-image:
@@ -58,8 +59,9 @@ header {
 }
 
 .hero h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 800;
   line-height: 1.2;
 }
 
@@ -74,12 +76,13 @@ header {
   max-width: 720px;
 }
 
-/* CTA LISTRADO */
+/* CTA */
 .cta {
   display: inline-block;
   margin-top: 25px;
   padding: 16px 28px;
-  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #020617;
   border-radius: 6px;
@@ -106,6 +109,7 @@ header {
 }
 
 .services h2 {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   font-size: 2.4rem;
   margin-bottom: 18px;
@@ -119,7 +123,7 @@ header {
   line-height: 1.6;
 }
 
-/* PORTFOLIO BUTTON */
+/* PORTFÓLIO */
 .portfolio-link {
   text-align: center;
   margin-top: 35px;
@@ -131,7 +135,7 @@ header {
   padding: 14px 26px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   transition: 0.3s;
 }
 
@@ -149,7 +153,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp {
   position: fixed;
   right: 20px;
@@ -166,7 +170,6 @@ footer {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-
   header {
     justify-content: center;
   }
@@ -194,13 +197,12 @@ footer {
 <body>
 
 <header>
-  <!-- LOGO SVG -->
   <svg class="logo" viewBox="0 0 260 70" xmlns="http://www.w3.org/2000/svg">
     <rect width="260" height="70" rx="8" fill="#020617"/>
     <rect x="10" y="15" width="40" height="40" stroke="#38bdf8" stroke-width="2" fill="none"/>
     <line x1="10" y1="35" x2="50" y2="35" stroke="#38bdf8" stroke-width="2"/>
     <line x1="30" y1="15" x2="30" y2="55" stroke="#38bdf8" stroke-width="2"/>
-    <text x="65" y="45" font-size="28" fill="#ffffff">PLANTAVETRA</text>
+    <text x="65" y="45" font-size="28" fill="#ffffff" font-family="Poppins">PLANTAVETRA</text>
   </svg>
 </header>
 
@@ -214,7 +216,7 @@ footer {
   </p>
 
   <a class="cta" href="https://wa.me/5517992603717" target="_blank">
-    Peça já o seu orçamento — entrega rápida
+    Solicitar atendimento no WhatsApp
   </a>
 </section>
 
@@ -227,7 +229,7 @@ footer {
   </p>
 
   <div class="portfolio-link">
-    <a href="portfolio.html">Ver Portifólio</a>
+    <a href="portfolio.html">Ver Portfólio</a>
   </div>
 </section>
 
@@ -235,9 +237,7 @@ footer {
   © 2026 PlantaVetra — Todos os direitos reservados.
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5517992603717" target="_blank">
-  💬
-</a>
+<a class="whatsapp" href="https://wa.me/5517992603717" target="_blank">💬</a>
 
 </body>
 </html>
