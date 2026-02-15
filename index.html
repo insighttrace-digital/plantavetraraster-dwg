@@ -10,17 +10,7 @@
 <meta name="keywords" content="rasterização dwg, planta para autocad, vetorizar planta, imagem para dwg">
 <meta name="author" content="PlantaVetra">
 
-<!-- FONTES SANS SERIF MODERNAS -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<!-- FAVICON -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
-<rect width='100' height='100' rx='14' fill='%23020617'/>
-<rect x='20' y='20' width='60' height='60' fill='none' stroke='%2338bdf8' stroke-width='6'/>
-<line x1='20' y1='50' x2='80' y2='50' stroke='%2338bdf8' stroke-width='4'/>
-<line x1='50' y1='20' x2='50' y2='80' stroke='%2338bdf8' stroke-width='4'/>
-</svg>">
 
 <style>
 * {
@@ -168,6 +158,20 @@ footer {
   z-index: 1000;
 }
 
+/* FACEBOOK FIXO */
+.facebook-float {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  z-index: 1000;
+}
+
 /* RESPONSIVO */
 @media (max-width: 768px) {
   header {
@@ -237,7 +241,22 @@ footer {
   © 2026 PlantaVetra — Todos os direitos reservados.
 </footer>
 
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/5517992603717" target="_blank">💬</a>
+
+<!-- FACEBOOK -->
+<a class="facebook-float"
+   href="https://www.facebook.com/profile.php?id=61588094615089"
+   target="_blank"
+   aria-label="Facebook PlantaVetra">
+
+  <svg viewBox="0 0 24 24" width="46" height="46" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+    <path fill="#ffffff"
+      d="M15.117 8.667h-1.266c-.994 0-1.185.472-1.185 1.164v1.528h2.37l-.309 2.393h-2.061V20h-2.471v-6.248H8.333v-2.393h1.862V9.542c0-1.845 1.127-2.85 2.771-2.85.788 0 1.465.059 1.662.085v1.89z"/>
+  </svg>
+
+</a>
 
 </body>
 </html>
